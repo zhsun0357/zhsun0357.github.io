@@ -56,22 +56,22 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><font size="+2">Publications</font></heading>
+              <heading><font size="+2">Selected Publications</font></heading>
               
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-          <tr onmouseout="pf_stop()" onmouseover="pf_start()">
+          <tr onmouseout="cdtof_stop()" onmouseover="cdtof_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-            <video width="260" autoplay loop muted>
+            <video width="255" autoplay loop muted>
             <source src="data/conclude_video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
             </video>
             </td>     
             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2211.08658">
                 <papertitle>Consistent Direct Time-of-Flight Video Depth Super-Resolution</papertitle>
               </a>
               <br>
@@ -95,14 +95,28 @@
             </td>
           </tr> 
 
+          
 
           <tr onmouseout="pf_stop()" onmouseover="pf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='pf_image'>
-                <img src="figures/pf_compare.png" width="260"></div>
+                  <img src='figures/uf.png' width="255">
+                </div>
+                <img src='figures/pf.png' width="255">
+                <figcaption>Click to view difference</figcaption>
               </div>
-            </td>     
+              <script type="text/javascript">
+                function pf_start() {
+                  document.getElementById('pf_image').style.opacity = "1";
+                }
+
+                function pf_stop() {
+                  document.getElementById('pf_image').style.opacity = "0";
+                }
+                pf_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2207.12570">
                 <papertitle>Seeing Far in the Dark with Patterned Flash</papertitle>
@@ -126,17 +140,38 @@
               </p>
             </td>
           </tr> 
-
-
-
+          <tr>
+            <td>
+            &nbsp    
+            </td>
+          </tr>
+          <tr>
+            <td>
+            &nbsp
+            </td>
+          </tr>
 
           <tr onmouseout="ecc_stop()" onmouseover="ecc_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ecc_image'>
-                <img src="figures/ecc_si.png" width="260"></div>
+                  <img src='figures/ecc_sl_baseline.png' width="255">
+                </div>
+                <img src='figures/ecc_sl.png' width="255">
+                <figcaption>Click to view difference</figcaption>
               </div>
-            </td>     
+              <script type="text/javascript">
+                function ecc_start() {
+                  document.getElementById('ecc_image').style.opacity = "1";
+                }
+
+                function ecc_stop() {
+                  document.getElementById('ecc_image').style.opacity = "0";
+                }
+                ecc_stop()
+              </script>
+            </td>
+
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="http://arxiv.org/abs/2206.09243">
                 <papertitle>Structured Light with Redundancy Codes</papertitle>
@@ -158,8 +193,16 @@
               </p>
             </td>
           </tr> 
-
-
+          <tr>
+            <td>
+            &nbsp    
+            </td>
+          </tr>
+          <tr>
+            <td>
+            &nbsp
+            </td>
+          </tr>
 
 
           <tr onmouseout="transcam_stop()" onmouseover="transcam_start()">
@@ -245,8 +288,26 @@
               </p>
             </td>
           </tr> 
-
-
+          <tr>
+            <td>
+            &nbsp
+            </td>
+          </tr>
+          <tr>
+            <td>
+            &nbsp
+            </td>
+          </tr>
+          <tr>
+            <td>
+            &nbsp
+            </td>
+          </tr>
+          <tr>
+            <td>
+            &nbsp
+            </td>
+          </tr>
 
           <tr onmouseout="spadnet_stop()" onmouseover="spadnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
