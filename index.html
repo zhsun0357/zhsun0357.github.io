@@ -66,6 +66,26 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="ecc_stop()" onmouseover="ecc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ecc_image'>
+                  <img src='figures/ecc_sl_baseline.png' width="255">
+                </div>
+                <img src='figures/ecc_sl.png' width="255">
+                <figcaption>Click to view difference</figcaption>
+              </div>
+              <script type="text/javascript">
+                function ecc_start() {
+                  document.getElementById('ecc_image').style.opacity = "1";
+                }
+
+                function ecc_stop() {
+                  document.getElementById('ecc_image').style.opacity = "0";
+                }
+                ecc_stop()
+              </script>z
+            </td>
 
           <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-19-33507&id=558446">
@@ -256,27 +276,6 @@
             &nbsp
             </td>
           </tr>
-
-          <tr onmouseout="ecc_stop()" onmouseover="ecc_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ecc_image'>
-                  <img src='figures/ecc_sl_baseline.png' width="255">
-                </div>
-                <img src='figures/ecc_sl.png' width="255">
-                <figcaption>Click to view difference</figcaption>
-              </div>
-              <script type="text/javascript">
-                function ecc_start() {
-                  document.getElementById('ecc_image').style.opacity = "1";
-                }
-
-                function ecc_stop() {
-                  document.getElementById('ecc_image').style.opacity = "0";
-                }
-                ecc_stop()
-              </script>z
-            </td>
 
 
           <tr onmouseout="transcam_stop()" onmouseover="transcam_start()">
